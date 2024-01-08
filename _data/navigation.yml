@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "Home"
+    url: /index/
+  - title: "Consortium"
+    url: /consortium/
+  - title: "Results"
+    url: /results/
+  - title: "Contact"
+    url: /contact/
