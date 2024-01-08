@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : 
 description              : "amalfi project website"
-url                      : "http://127.0.0.1:4000"
+url                      : "https://sebastiankrawczyk.github.io/amalfi-website/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "sebastiankrawczyk/minimal-mistakess"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
