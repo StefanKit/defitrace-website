@@ -2,7 +2,7 @@
 layout: single
 author_profile: false
 
-tagline: "..."
+tagline: "data-driven method to analyse illicit payment cross-ledger flows in DeFi-ecosystems"
 header:
   overlay_image: /assets/images/background.png
 ---

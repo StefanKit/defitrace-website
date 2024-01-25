@@ -16,12 +16,12 @@ minimal_mistakes_skin    : "sunrise" #"contrast", "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "en-US"
-title                    : "defitrace"
+title                    : "DeFiTrace"
 email			 : your-email@example.com
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : 
-description              : "amalfi project website"
+description              : "data-driven method to analyse illicit payment cross-ledger flows in DeFi-ecosystems"
 url                      : "https://StefanKit.github.io/defitrace-website/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "StefanKit/defitrace-website"
