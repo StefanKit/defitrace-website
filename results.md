@@ -4,7 +4,5 @@ author_profile: false
 
 tagline: "Results"
 header:
-  overlay_image: /assets/images/background copy.png
+  overlay_image: /assets/images/background.png
 ---
-
-This page will present the results of the amalfi project.
