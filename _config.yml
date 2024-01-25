@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : 
 description              : "data-driven method to analyse illicit payment cross-ledger flows in DeFi-ecosystems"
-url                      : "https://StefanKit.github.io/defitrace-website/"
+url                      : "https://stefankit.github.io//defitrace-website/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "StefanKit/defitrace-website"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
