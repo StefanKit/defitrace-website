@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "sunrise" #"contrast", "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "en-US"
-title                    : "DeFi-Trace"
+title                    : "defitrace"
 email			 : your-email@example.com
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : 
-description              : "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-url                      : "http://127.0.0.1:4000"
+description              : "amalfi project website"
+url                      : "https://StefanKit.github.io/defitrace-website/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "StefanKit/defitrace-website"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
