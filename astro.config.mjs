@@ -5,7 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://stefankit.github.io",
-  base: '/defitrace_website',
+  site: "http://defitrace.info/",
   integrations: [tailwind(), mdx(), sitemap()],
 });
