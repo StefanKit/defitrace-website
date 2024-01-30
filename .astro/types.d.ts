@@ -184,59 +184,57 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"abc": {
-};
-"blog": {
-"complete-guide-fullstack-development.md": {
-	id: "complete-guide-fullstack-development.md";
-  slug: "complete-guide-fullstack-development";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"essential-data-structures-algorithms.md": {
-	id: "essential-data-structures-algorithms.md";
-  slug: "essential-data-structures-algorithms";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"how-to-become-frontend-master.md": {
-	id: "how-to-become-frontend-master.md";
-  slug: "how-to-become-frontend-master";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"kitchensink.mdx": {
-	id: "kitchensink.mdx";
-  slug: "kitchensink";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
+		"blog": {
 };
 "team": {
-"csh.md": {
-	id: "csh.md";
-  slug: "csh";
+"0_csh.md": {
+	id: "0_csh.md";
+  slug: "0_csh";
   body: string;
   collection: "team";
-  data: InferEntrySchema<"team">
+  data: any
 } & { render(): Render[".md"] };
-"marcell-ziemann.md": {
-	id: "marcell-ziemann.md";
-  slug: "marcell-ziemann";
+"1_ui.md": {
+	id: "1_ui.md";
+  slug: "1_ui";
   body: string;
   collection: "team";
-  data: InferEntrySchema<"team">
+  data: any
 } & { render(): Render[".md"] };
-"robert-palmer.md": {
-	id: "robert-palmer.md";
-  slug: "robert-palmer";
+"2_ait.md": {
+	id: "2_ait.md";
+  slug: "2_ait";
   body: string;
   collection: "team";
-  data: InferEntrySchema<"team">
+  data: any
+} & { render(): Render[".md"] };
+"3_iknaio.md": {
+	id: "3_iknaio.md";
+  slug: "3_iknaio";
+  body: string;
+  collection: "team";
+  data: any
+} & { render(): Render[".md"] };
+"4_bmi.md": {
+	id: "4_bmi.md";
+  slug: "4_bmi";
+  body: string;
+  collection: "team";
+  data: any
+} & { render(): Render[".md"] };
+"5_bmf.md": {
+	id: "5_bmf.md";
+  slug: "5_bmf";
+  body: string;
+  collection: "team";
+  data: any
+} & { render(): Render[".md"] };
+"6_bmj.md": {
+	id: "6_bmj.md";
+  slug: "6_bmj";
+  body: string;
+  collection: "team";
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -248,5 +246,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = typeof import("../src/content/config");
+	type ContentConfig = never;
 }
