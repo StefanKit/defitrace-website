@@ -184,57 +184,55 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"blog": {
-};
-"team": {
+		"team": {
 "0_csh.md": {
 	id: "0_csh.md";
   slug: "0_csh";
   body: string;
   collection: "team";
-  data: any
+  data: InferEntrySchema<"team">
 } & { render(): Render[".md"] };
 "1_ui.md": {
 	id: "1_ui.md";
   slug: "1_ui";
   body: string;
   collection: "team";
-  data: any
+  data: InferEntrySchema<"team">
 } & { render(): Render[".md"] };
 "2_ait.md": {
 	id: "2_ait.md";
   slug: "2_ait";
   body: string;
   collection: "team";
-  data: any
+  data: InferEntrySchema<"team">
 } & { render(): Render[".md"] };
 "3_iknaio.md": {
 	id: "3_iknaio.md";
   slug: "3_iknaio";
   body: string;
   collection: "team";
-  data: any
+  data: InferEntrySchema<"team">
 } & { render(): Render[".md"] };
 "4_bmi.md": {
 	id: "4_bmi.md";
   slug: "4_bmi";
   body: string;
   collection: "team";
-  data: any
+  data: InferEntrySchema<"team">
 } & { render(): Render[".md"] };
 "5_bmf.md": {
 	id: "5_bmf.md";
   slug: "5_bmf";
   body: string;
   collection: "team";
-  data: any
+  data: InferEntrySchema<"team">
 } & { render(): Render[".md"] };
 "6_bmj.md": {
 	id: "6_bmj.md";
   slug: "6_bmj";
   body: string;
   collection: "team";
-  data: any
+  data: InferEntrySchema<"team">
 } & { render(): Render[".md"] };
 };
 
@@ -246,5 +244,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }
