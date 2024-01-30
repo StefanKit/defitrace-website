@@ -28,6 +28,9 @@ jobs:
           version: latest
       - name: Install dependencies
         uses: actions/upload-artifact@v3
+        with:
+          name: node_modules
+          path: node_modules
       - name: Install, build, and upload your site
         uses: withastro/action@v1
         with:
