@@ -5,7 +5,7 @@ title: ""
 description: "The Austrian Federal Ministry of the Interior (BMI) is responsible for safeguarding the internal security of Austria. It covers a broad range of tasks relevant to internal security, reaching far beyond the core security tasks of police matters. "
 link: "https://www.bmi.gv.at"
 avatar: {
-    src: "/src/assets/2018_BMI_Logo_deutsch_4c.jpg",
+    src: "/public/BMI.jpg",
     alt: "Ministry of the Interior"
 }
 publishDate: "2024-01-29 12:00"
