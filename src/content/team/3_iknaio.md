@@ -6,7 +6,7 @@ description: "Iknaio, established in 2021 as a Complexity Science Hub Vienna spi
 cryptocurrency analytics platform GraphSense developed by researchers over the past six years. "
 link: "https://www.ikna.io/"
 avatar: {
-    src: "/public/iknaio.png",
+    src: "/iknaio.png",
     alt: "IKNAIO Cryptoasset Analytics GmbH"
 }
 publishDate: "2024-01-29 12:00"
