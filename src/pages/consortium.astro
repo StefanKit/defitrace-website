@@ -23,7 +23,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
     publishedTeamMembers.map((teamMemberEntry) => (
       <div class="group flex items-center justify-between gap-8">
         <div class="">
-          <div class="flex flex-col items-center">
+          <div class="group flex flex-col md:flex-row items-center justify-between gap-8">
             <a href={teamMemberEntry.data.link}>
               <Picture
                 src={teamMemberEntry.data.avatar.src}
