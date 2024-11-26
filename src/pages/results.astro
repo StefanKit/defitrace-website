@@ -2,17 +2,40 @@
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
-import HeroWithImage from '@components//HeroWithImage.astro';
-import heroImage from "../../public/background.png";
-import { Icon } from "astro-icon";
-
+import books from '../data/books.json';
+import talks from '../data/talks.json';
 ---
 
-<Layout title="Contact">
+<Layout title="Results">
   <Container>
     <Sectionhead>
       <Fragment slot="title">Results</Fragment>
-      <Fragment slot="desc">This page will present the results of the DeFiTrace project.</Fragment>
+      <Fragment slot="desc"> List of activities for the DeFiTrace project. </Fragment>
     </Sectionhead>
-    </Container>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mt-12 text-center">
+    Talks
+    </h2>
+
+
+
+    <div class="flex flex-col mx-auto max-w-4xl mt-12 gap-12">
+  {talks.map((talk) => (
+    <div class="group flex items-center justify-between gap-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <!-- Left Side -->
+        <div>
+          <h2 class="text-xl font-bold">{talk.title}</h2>
+          <p class="text-gray-600">{talk.author}</p>
+          <p class="text-sm text-gray-500">{talk.date} · {talk.destination} · {talk.venue}</p>
+          {talk.description && <p class="mt-2 text-gray-700">{talk.description}</p>}
+        </div>
+
+      </div>
+    </div>
+  ))}
+</div>
+
+
+  </Container>
 </Layout>
