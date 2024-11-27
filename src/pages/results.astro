@@ -2,8 +2,9 @@
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
-import books from '../data/books.json';
+import publications from '../data/publications.json';
 import talks from '../data/talks.json';
+import events from '../data/events.json';
 ---
 
 <Layout title="Results">
@@ -13,11 +14,49 @@ import talks from '../data/talks.json';
       <Fragment slot="desc"> List of activities for the DeFiTrace project. </Fragment>
     </Sectionhead>
 
+     <h2 class="text-2xl font-semibold text-gray-800 mt-12 text-center">
+    Events
+    </h2>
+
+    <div class="flex flex-col mx-auto max-w-4xl mt-12 gap-12">
+  {events.map((event) => (
+    <div class="group flex items-center justify-between gap-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <h2 class="text-xl font-bold">{event.title}</h2>
+        <p class="text-gray-600">{event.date}  </p>
+    </div>
+    </div>
+  ))}
+
+     <h2 class="text-2xl font-semibold text-gray-800 mt-12 text-center">
+    Publications
+    </h2>
+
+    <div class="flex flex-col mx-auto max-w-4xl mt-12 gap-12">
+  {publications.map((pub) => (
+    <div class="group flex items-center justify-between gap-8">
+      <p class="text-gray-700">
+        {pub.authors} ({pub.year}).
+        <span class="italic">{pub.title}</span>.
+        <span>{pub.journal}</span> {pub.journal && pub.pages && `, `} {pub.pages}.
+        {pub.link && (
+          <a
+            href={pub.link}
+            class="text-blue-500 underline hover:text-blue-700 ml-2"
+            target="_blank"
+          >
+            Link
+          </a>
+        )}
+      </p>
+    </div>
+  ))}
+</div>
+
+
     <h2 class="text-2xl font-semibold text-gray-800 mt-12 text-center">
     Talks
     </h2>
-
-
 
     <div class="flex flex-col mx-auto max-w-4xl mt-12 gap-12">
   {talks.map((talk) => (
@@ -26,8 +65,8 @@ import talks from '../data/talks.json';
         <!-- Left Side -->
         <div>
           <h2 class="text-xl font-bold">{talk.title}</h2>
-          <p class="text-gray-600">{talk.author}</p>
-          <p class="text-sm text-gray-500">{talk.date} · {talk.destination} · {talk.venue}</p>
+          <span class="text-gray-600">{talk.author} - </span>
+          <span class="text-sm text-gray-500">{talk.date} · {talk.destination} · {talk.venue}</span>
           {talk.description && <p class="mt-2 text-gray-700">{talk.description}</p>}
         </div>
 
